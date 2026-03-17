@@ -1,18 +1,10 @@
-harvard = "linguistics, physics, programming, fine arts"
-stanford = "biology, classics, geophysics, music"
+x = 101
 
-arts = "linguistics, fine arts, classics, music"
-sciences = "physics, programming, biology, geophysics"
-
-major = "biology"
-if major in harvard:
-    if major in arts:
-        print("This is an arts program at Harvard")
-    if major in sciences:
-        print("This is a sciences program at Harvard")
-if major in stanford:
-    if major in arts:
-        print("This is an arts program at Stanford")
-    if major in sciences:
-        print("This is a sciences program at Stanford")
- 
+if x > 100:
+    print("x is greater than 100")
+else:
+    if x == 100:
+        print("x is equal to 100")
+    else:
+        print("x is less than 100")
+        print("This was printed because x is less than 100")
