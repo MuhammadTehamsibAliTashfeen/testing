@@ -1,11 +1,19 @@
-city = "London"
-summer = "Barcelona, Rome, Istanbul, Lisbon, Paris"
-winter = "Oslo, Helsinki, Sydney, Cape Town, Vienna"
+"""
+Sleep Checker
+Logic
+A ≤ H ≤ B.         Normal
+H < A.             Deficiency
+H > B.            Excess
+"""
 
-if (city in summer) or (city in winter):
-    if city in summer:
-        print("You should visit it in the summer!")
-    else:
-        print("You should visit it in the winter!")
-else:
-    print("I don't know what the best season is :(")
+
+A = int(input())
+B = int(input())
+H = int(input())
+
+if A <= H <= B:
+    print("Normal")
+elif H < A:
+    print("Deficiency")
+else:    
+    print("Excess")
