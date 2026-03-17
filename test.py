@@ -1,11 +1,6 @@
-firstNumber = int(input("Enter the first number: "))
-secondNumber = int(input("Enter the second number: "))
-if firstNumber > secondNumber:
-    print(firstNumber)
-    print(secondNumber)
-elif secondNumber > firstNumber:
-    print(secondNumber)
-    print(firstNumber)
-else:                        # If both numbers are equal, we can print either one of them
-    print(firstNumber)
-    print(secondNumber)
+year = int(input())
+
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print("Leap")
+else:
+    print("Ordinary")
