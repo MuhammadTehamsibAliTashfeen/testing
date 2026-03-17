@@ -1,19 +1,8 @@
-"""
-Sleep Checker
-Logic
-A ≤ H ≤ B.         Normal
-H < A.             Deficiency
-H > B.            Excess
-"""
-
-
-A = int(input())
-B = int(input())
-H = int(input())
-
-if A <= H <= B:
-    print("Normal")
-elif H < A:
-    print("Deficiency")
-else:    
-    print("Excess")
+for i in range(1,6):
+    if i == 1:
+        print(i, "little bear")
+    else:
+        print(i, "little bears")
+    print("Wondering what to do")
+    print("Along came another")
+    print("then there were", i+1, '!')
