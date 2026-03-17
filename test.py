@@ -1,8 +1,11 @@
-a = int(input())
-b = int(input())
-c = int(input())
+city = "London"
+summer = "Barcelona, Rome, Istanbul, Lisbon, Paris"
+winter = "Oslo, Helsinki, Sydney, Cape Town, Vienna"
 
-if a + b + c == 180 and a > 0 and b > 0 and c > 0:
-    print("The triangle is valid!")
+if (city in summer) or (city in winter):
+    if city in summer:
+        print("You should visit it in the summer!")
+    else:
+        print("You should visit it in the winter!")
 else:
-    print("The triangle is not valid!")
+    print("I don't know what the best season is :(")
