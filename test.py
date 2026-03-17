@@ -1,5 +1,18 @@
-# Read the user's age
-age = int(input())
+harvard = "linguistics, physics, programming, fine arts"
+stanford = "biology, classics, geophysics, music"
 
-# Check the age and print the corresponding category
-# TODO: Write your if statement here
+arts = "linguistics, fine arts, classics, music"
+sciences = "physics, programming, biology, geophysics"
+
+major = "biology"
+if major in harvard:
+    if major in arts:
+        print("This is an arts program at Harvard")
+    if major in sciences:
+        print("This is a sciences program at Harvard")
+if major in stanford:
+    if major in arts:
+        print("This is an arts program at Stanford")
+    if major in sciences:
+        print("This is a sciences program at Stanford")
+ 
