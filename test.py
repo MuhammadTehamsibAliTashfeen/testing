@@ -1,8 +1,5 @@
-for i in range(1,6):
-    if i == 1:
-        print(i, "little bear")
-    else:
-        print(i, "little bears")
-    print("Wondering what to do")
-    print("Along came another")
-    print("then there were", i+1, '!')
+print("Have you had enough hours of sleep today?")
+answer = input()
+
+
+print("Let's drink cocoa!" if answer == 'yes' else "I'd recommend a coffee!")
