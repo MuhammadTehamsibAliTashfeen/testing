@@ -1,8 +1,14 @@
-class Hello
+class Test
 {
     public static void main(String[] args)
     {
-        int Result = 5;
-        System.out.println(Result);
+        int num1 = 1;
+        int num2 = 2;
+        int result = num1 * num2;
+        System.out.println("The result is: " + result);
+
     }
+
+
+
 }
