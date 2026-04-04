@@ -8,7 +8,9 @@ class Test
         byte num3 = 100;
         double num4 = 3.14;
         long num5 = 100000l;
-        
+        boolean flag = true;
+
+
         System.out.println("Integer: " + num1);
         System.out.println("Float: " + num2);
         System.out.println("Character: " + ch);
