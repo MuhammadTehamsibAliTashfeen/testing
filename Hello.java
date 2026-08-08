@@ -1,26 +1,13 @@
-class hello
-{
-   public static void main(String args[])
-    {
-        // lets work with literals
-        byte b = 3;
-        short s =342;
-        int i = 1232131;
-        long l = 123123123123L;
+public class Hello {
 
-        char c = 'a';
+    public static void main(String[] args){
 
-        float f = 3.123f;
-        double d = 12312312.34234234;
+        //Below code prints my name and age
+        System.out.println("My name is: Muhammad Tehmasib Ali Tashfeen");
+        System.out.println("My age is: " + 28);
 
-        boolean bo = true;
-
-
-        
-
-
-
-
+        /*The Below code
+        will get more complicated */
 
 
 
