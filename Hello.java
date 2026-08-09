@@ -4,10 +4,13 @@ public class Hello {
 
     public static void main(String[] args){
 
-        Boolean Rain = true;
+        int balance = 0;  //in dollars usd
 
-        if (Rain == true) {
-            System.out.println("Its is raining");
+        if (balance == 0) {
+            System.out.println("You have no outstanding balance");
+        }
+        else {
+            System.out.println("You have a due balance of "+balance);
         }
 
 
