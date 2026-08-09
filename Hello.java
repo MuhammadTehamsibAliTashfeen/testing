@@ -1,11 +1,16 @@
+import java.util.Locale;
+
 public class Hello {
 
     public static void main(String[] args){
 
-        int modulus = 5 % 2;
+       String greeting = "Hello Admin";
+
+       System.out.println(greeting.toLowerCase());
 
 
-        System.out.println(modulus); // 65;
+
+
 
     }
 }
