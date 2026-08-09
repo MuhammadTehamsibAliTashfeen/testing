@@ -4,13 +4,11 @@ public class Hello {
 
     public static void main(String[] args){
 
-       String greeting = "\\Hello Admin I\'m Ali\'s \"Sister\"";
+        Boolean Rain = true;
 
-       System.out.println(greeting);
-
-
-
-
+        if (Rain == true) {
+            System.out.println("Its is raining");
+        }
 
 
     }
