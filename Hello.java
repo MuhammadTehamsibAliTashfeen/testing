@@ -4,14 +4,27 @@ public class Hello {
 
     public static void main(String[] args) {
 
-        int ali = 10;
-        int tash = 0;
+        int age = 21;
+        boolean citizen = false;
 
-        if (ali >= 1) {
-            System.out.println("Ali has cash");
-            if (tash >= 1) {
-                System.out.println("Tash has cash");
-            }
+        if (age >= 21){
+            System.out.println("Your AGE is eligible for vote");
+                if (citizen == true){
+                    System.out.println("You are lawful citizen to vote");
+                }
+                else {
+                    System.out.println("You are not lawful citizen to vote");
+                }
+
+        } else {
+            System.out.println("Please go to help desk");
         }
+
+
+
+
+
+
+
     }
 }
