@@ -4,15 +4,9 @@ public class Hello {
 
     public static void main(String[] args){
 
-        int balance = 0;  //in dollars usd
-
-        if (balance == 0) {
-            System.out.println("You have no outstanding balance");
-        }
-        else {
-            System.out.println("You have a due balance of "+balance);
-        }
-
+        int amount = 0;
+        String result = (amount >= 0) ? "you have outstanding amount": "You have NO outstanding amount" ;
+        System.out.println(result);
 
     }
 }
