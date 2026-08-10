@@ -4,9 +4,11 @@ public class Hello {
 
     public static void main(String[] args){
 
-        int amount = 0;
-        String result = (amount >= 0) ? "you have outstanding amount": "You have NO outstanding amount" ;
-        System.out.println(result);
+        double amount = 1000.00d;
 
+        String message = (amount > 0) ? "Outstanding Amount"
+                        :(amount == 0) ? "No amount pending"
+                        : "contact ali";
+        System.out.println(message);
     }
 }
