@@ -1,30 +1,23 @@
-import java.util.Locale;
+
+
+ class Caluculator{
+
+     public int add(int n1, int n2) {
+        int sum = n1 + n2;
+        return sum;
+    }
+}
 
 public class Hello {
 
     public static void main(String[] args) {
 
-        int age = 21;
-        boolean citizen = false;
 
-        if (age >= 21){
-            System.out.println("Your AGE is eligible for vote");
-                if (citizen == true){
-                    System.out.println("You are lawful citizen to vote");
-                }
-                else {
-                    System.out.println("You are not lawful citizen to vote");
-                }
+        Caluculator cal = new Caluculator();
 
-        } else {
-            System.out.println("Please go to help desk");
-        }
+        int result = cal.add(3,5);
 
-
-
-
-
-
+        System.out.println(result);
 
     }
 }
