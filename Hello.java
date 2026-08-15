@@ -2,15 +2,16 @@ public class Hello
 {
 
     static int myMethod(int x){
-        return 5 + x;
+        return 2 * x;
     }
 
 
     public static void main(String[] args)
     {
 
-        int y = myMethod(4);
-        System.out.println(y);
+        for (int i=0;i<=5;i++){
+            System.out.println("Double of " + i + " is " + myMethod(i));
+        }
 
     }
 }
