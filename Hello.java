@@ -1,18 +1,16 @@
-
-
 public class Hello
 {
-    static void myMethod(String fname)
-    {
-        System.out.println("Hello " + fname);
+
+    static int myMethod(int x){
+        return 5 + x;
     }
+
 
     public static void main(String[] args)
     {
 
-        myMethod("Ali");
-        myMethod("Tashfeen");
-
+        int y = myMethod(4);
+        System.out.println(y);
 
     }
 }
