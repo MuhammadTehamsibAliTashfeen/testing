@@ -1,16 +1,8 @@
 public class Hello
 {
 
-     int x = 5;
+     String fname = "Muhammad Tehmasib";
+     int age = 24;
+     String address = "2029 N Woodlane St";
 
-
-    public static void main(String[] args)
-    {
-
-        Hello hello = new Hello();
-
-
-
-
-    }
 }
