@@ -1,12 +1,15 @@
+import java.awt.*;
+
 public class Second {
 
     public static void main(String[] args){
 
-        String[] cars = {"BMW","Porshe","Audi","Ford"};
-        int[] plate ={12,33,54,65};
+        String[] cars = new String[4];
+
+        cars[0] = "BMW";
+        cars[1] = "Audi";
 
         System.out.println(cars[0]);
-
 
 
     }
