@@ -1,8 +1,12 @@
 public class Hello
 {
+     static void mySpeed(){
+          System.out.println("You are going fast!");
+     }
 
-     String fname = "Muhammad Tehmasib";
-     int age = 24;
-     String address = "2029 N Woodlane St";
+     static void myNumberPlate(int plate){
+          System.out.println("Your Number Plate was: "+plate);
+     }
+
 
 }

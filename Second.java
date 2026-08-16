@@ -2,13 +2,12 @@ public class Second {
 
     public static void main(String[] args){
 
-        Hello obj1 = new Hello();
+        String[] cars = {"BMW","Porshe","Audi","Ford"};
+        int[] plate ={12,33,54,65};
 
-        System.out.println("My name is "+ obj1.fname + " my age is " + obj1.age + " my address is " + obj1.address);
-
+        System.out.println(cars[0]);
 
 
 
     }
-
 }
