@@ -4,17 +4,12 @@ public class Second {
 
     public static void main(String[] args){
 
-        String[] cars = new String[4];
+        int[] plate = {1,2,3,4,5};
 
-        cars[0] = "BMW";
-        cars[1] = "Audi";
-        cars[2] = "AMG";
-        cars[3] = "Porshe";
-
-        for (int i = 0; i < cars.length; i++)
-        {
-            System.out.println(cars[i]);
+        for (int plates: plate){
+            System.out.println(plates);
         }
+
 
 
     }
