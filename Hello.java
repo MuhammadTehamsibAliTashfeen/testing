@@ -3,16 +3,18 @@ public class Hello
 
      public static void main(String[] args){
 
-          int[] age = {22,34,45,12,12,34};
-          int sum = 0;
-          int average;
-          for (int i = 0; i < age.length; i++){
-                sum += age[i];
-          }
-          average = sum/2;
+          int[][] homes = {{1,2,10},{4,5,6}};
 
-          System.out.println(sum);
-          System.out.println(average);
+          for ( int row = 0; row < homes.length; row++){
+               for (int col = 0; col < homes[row].length; col++){
+                    System.out.println(homes[row][col]);
+               }
+          }
+
+
+
+
+
 
      }
 }
