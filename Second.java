@@ -8,8 +8,13 @@ public class Second {
 
         cars[0] = "BMW";
         cars[1] = "Audi";
+        cars[2] = "AMG";
+        cars[3] = "Porshe";
 
-        System.out.println(cars[0]);
+        for (int i = 0; i < cars.length; i++)
+        {
+            System.out.println(cars[i]);
+        }
 
 
     }
