@@ -1,39 +1,63 @@
 public class Hello{
 
     public static void main(String[] args){
-    greet("Muhammad");
-    int result = square(5);
-    System.out.println(result);
-    boolean result1 = isEven(2);
-    System.out.println(result1);
-    int result2 = findMaximium(4,6);
-    System.out.println(result2);
-    double result3 = calculateAverage(10,55,97);
-    System.out.println(result3);
+
+        boolean result = isPositive(-4);
+        System.out.println(result);
+
+        boolean rr2 = isPrime(9);
+        System.out.println(rr2);
+
+
+        int result3 = factorial(5);
+        System.out.println(result3);
+
+        int result4 = findMinimum(3,1);
+        System.out.println(result4);
+
+        double result5 = rectangleArea(33,11);
+        System.out.println(result5);
+
     }
 
-    public static void greet(String name){
-        System.out.println("Hello, "+name+"!");
-    }
+    public static boolean isPositive(int num){
+         return num > 0;
+         }
 
-    public static int square(int a){
-        return a * a;
-    }
 
-    public static boolean isEven(int num){
-        return num % 2 == 0;
-    }
+   public static boolean isPrime(int num) {
+         if (num <= 1) {
+             return false;
+         }
+         for (int n = 2; n < num; n++){
+             if ( num % n == 0){
+                 return false;
+             }
+         }
 
-    public static int findMaximium(int a, int b){
-        if (a>b){
-            return a;
+         return true;
+     }
+
+     public static int factorial(int num){
+        int r = 1;
+             for (int n = 1; n <=num; n++){
+                  r *= n;
+             }
+             return r;
         }
-        else {
-            return b;
-        }
-    }
 
-    public static double calculateAverage(int a, int b, int c){
-        return (a+b+c)/3.0;
+         public static int findMinimum(int a, int b){
+             if (a < b){
+                 return a;
+             }else {
+                 return b;
+             }
+        }
+         public static double rectangleArea(double a, double b){
+             double area = a * b;
+             return area;
+        }
+
+
+
     }
-}
