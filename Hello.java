@@ -1,23 +1,41 @@
-public class Hello
-{
+/*
+Create a Java program that:
+Stores your name in a String.
+Stores your age in an int.
+Prints both.
+Determines whether the person is an adult.
+Prints numbers from 1 through 10.
+Prints only the even numbers from 1 through 20
+ */
 
-     public static void main(String[] args){
+public class Hello{
 
-          int num[][] = new int[3][4];
-          int temp;
+    public static void main(String[] args){
 
-          for (int r = 0; r < 3; r++){
+        String name = "Muhammad Tehmasib";
+        int age = 28;
 
-               for (int c = 0; c < 4; c++){
-                    num[r][c] = (int) (Math.random() * 100);
-                    System.out.print(num[r][c] + " ");
-               }
-               System.out.println();
+        System.out.println("Name is: "+ name);
+        System.out.println("Age is: "+age);
 
-          }
+        if (age <= 18) {
+            System.out.println("You are not a adult");
+        }
+        else {
+            System.out.println("You are a adult");
+        }
+
+        for (int i = 1; i < 11; i++){
+            System.out.println(i);
+        }
+
+        for (int i = 1; i < 11; i++){
+            if ( i % 2 == 0)
+                System.out.println(i);
+        }
 
 
 
+    }
 
-     }
 }
