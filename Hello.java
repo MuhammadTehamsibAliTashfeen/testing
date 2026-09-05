@@ -3,10 +3,13 @@ public class Hello {
     public static void main(String[] args) {
         int[] numbers = {10, 25, 7, 42, 15, 8};
 
-        printArray(numbers);
+        /*printArray(numbers);
         System.out.println(calculateSum(numbers));
         System.out.println(findMaximum(numbers));
         System.out.println(countEven(numbers));
+         */
+        System.out.println(findMinimum(numbers));
+
     }
 
     public static void printArray(int[] numbers){
@@ -25,9 +28,10 @@ public class Hello {
     }
 
     public static int findMaximum(int[] numbers){
-        int larger = 0;
+        int larger = numbers[0];
+
         for (int i =0; i < numbers.length;i++){
-            if (numbers[i] > numbers[i+1]){
+            if (numbers[i] > larger){
                 larger = numbers[i];
             }
         }
@@ -44,6 +48,8 @@ public class Hello {
         }
         return count;
     }
+
+
 
 
 }
