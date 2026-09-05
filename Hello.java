@@ -3,13 +3,16 @@ public class Hello {
     public static void main(String[] args) {
         int[] numbers = {10, 25, 7, 42, 15, 8};
 
-        /*printArray(numbers);
+        printArray(numbers);
         System.out.println(calculateSum(numbers));
         System.out.println(findMaximum(numbers));
         System.out.println(countEven(numbers));
         System.out.println(calculateAverage(numbers));
         System.out.println(findMinimum(numbers));
-*/
+        System.out.println(countOdd(numbers));
+
+        System.out.println(contains(numbers, 7));
+
 
     }
 
@@ -53,9 +56,7 @@ public class Hello {
     public static int findMinimum(int[] numbers){
         int mini = numbers[0];
         for(int i = 0; i < numbers.length; i++){
-            if (mini < numbers[i]){
-                mini = mini;
-            }else {
+            if (numbers[i]< mini){
                 mini = numbers[i];
             }
         }
@@ -63,8 +64,8 @@ public class Hello {
     }
 
 
-    public static int calculateAverage(int[] numbers){
-        int average,sum = 0;
+    public static double calculateAverage(int[] numbers){
+        double average,sum = 0;
         for (int i=0; i < numbers.length; i++){
             sum += numbers[i];
         }
@@ -72,8 +73,25 @@ public class Hello {
         return average;
     }
 
+    public static int countOdd(int[] numbers){
+        int count = 0;
+        for(int num: numbers){
+            if(num % 2 != 0){
+                count++;
+            }
+        }
+        return count;
+    }
 
+    public static boolean contains(int[] numbers, int target){
 
+        for(int i = 0; i< numbers.length; i++){
+            if(target == numbers[i]){
+                 return true;
+            }
+        }
+        return false;
+    }
 
 
 
