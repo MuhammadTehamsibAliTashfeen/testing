@@ -7,8 +7,9 @@ public class Hello {
         System.out.println(calculateSum(numbers));
         System.out.println(findMaximum(numbers));
         System.out.println(countEven(numbers));
-         */
+        System.out.println(calculateAverage(numbers));
         System.out.println(findMinimum(numbers));
+*/
 
     }
 
@@ -48,6 +49,30 @@ public class Hello {
         }
         return count;
     }
+
+    public static int findMinimum(int[] numbers){
+        int mini = numbers[0];
+        for(int i = 0; i < numbers.length; i++){
+            if (mini < numbers[i]){
+                mini = mini;
+            }else {
+                mini = numbers[i];
+            }
+        }
+        return mini;
+    }
+
+
+    public static int calculateAverage(int[] numbers){
+        int average,sum = 0;
+        for (int i=0; i < numbers.length; i++){
+            sum += numbers[i];
+        }
+        average = sum / numbers.length;
+        return average;
+    }
+
+
 
 
 
