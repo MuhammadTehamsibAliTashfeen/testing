@@ -4,8 +4,8 @@ public class Hello {
 
     public static void main(String[] args) {
         
-        int a = 14, b = 1, c = 2;
-
+        int a , b , c;
+        a = b = c = 10;
 
 
 
