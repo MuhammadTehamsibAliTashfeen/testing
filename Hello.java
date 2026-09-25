@@ -4,9 +4,13 @@ public class Hello {
 
     public static void main(String[] args) {
         
-        String name = "Ali Tashfeen";
+        int a = 14, b = 1, c = 2;
 
-        System.out.println(name);
+
+
+
+
+        System.out.println("Total sum: "+(a+b+c));
 
     
     
