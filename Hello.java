@@ -4,7 +4,7 @@ public class Hello {
 
     public static void main(String[] args) {
         
-       char a = 109;
+       var a = 109;
 
 
 
