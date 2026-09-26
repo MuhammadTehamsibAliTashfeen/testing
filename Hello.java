@@ -4,16 +4,9 @@ public class Hello {
 
     public static void main(String[] args) {
         
-       var a = 109;
+       String name = "Ali Tashfeen";
 
-
-
-
-
-
-
-
-        System.out.println(a);
+       System.out.println(name.toUpperCase());
 
     
     
