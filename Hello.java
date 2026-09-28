@@ -4,16 +4,11 @@ public class Hello {
 
     public static void main(String[] args) {
 
+    String[] cars = {"BMW","Ford","Mercedes","Audi","Toyota"};
 
-      int i = 0;
-
-      while(i < 5){
-          System.out.println(i);
-          i++;
-      }
-
-
-    
+    for(int i=0;i<cars.length;i++){
+        System.out.println(cars[i]);
+    }
     
 
 
