@@ -1,18 +1,16 @@
 //Writen and maintained by Ali
 
-import java.util.Arrays;
-
 public class Hello {
+
+    int x = 5;
 
     public static void main(String[] args) {
 
-        int[][] nums = {{1,2,3},{4,5,6}};
+        Hello obj1 = new Hello();
+        int y = obj1.x;
+        System.out.println(y);
 
-        for(int[] n :nums){
-            for(int i : n){
-                System.out.print(i);
-            }
-        }
+
 
 
 
