@@ -8,8 +8,11 @@ public class Hello {
 
         int[][] nums = {{1,2,3},{4,5,6}};
 
-        System.out.println(nums[0][0]);
-        System.out.println(nums[1][0]);
+        for(int[] n :nums){
+            for(int i : n){
+                System.out.print(i);
+            }
+        }
 
 
 
