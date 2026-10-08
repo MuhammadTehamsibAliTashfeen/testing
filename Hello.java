@@ -2,21 +2,27 @@
 
 public class Hello {
 
+    public static int sumMatrix(int[][] matrix) {
+        int sum = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                 sum +=matrix[i][j];
+
+            }
+        }
+        return sum;
+    }
+
+
+
     public static void main(String[] args) {
 
-        int[] numbers = {10, 20, 30, 40, 50};
+        int[][] matrix = {
+                {10, 20, 30},
+                {40, 50, 60},
+                {70, 80, 90}
+        };
 
-        int copy[] = numbers.clone();
-
-        copy[0] = 100; 
-
-        for(int num : numbers) {
-            System.out.println(num);
-        }
-
-        for(int num : copy) {
-            System.out.println(num);
-        }
-
+        System.out.println(sumMatrix(matrix));
     }
 }
