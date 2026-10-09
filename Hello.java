@@ -2,22 +2,24 @@
 
 public class Hello {
 
-    public static boolean isPalindrome(String text) {
-
-
-        String reversed = "";
-        boolean result = false;
+    public static boolean isPalindromeFast(String text) {
 
         // Your code here
+        int left = 0;
+        int right = text.length() - 1;
 
-        for (int i = text.length() - 1; i >= 0; i--) {
-            reversed += text.charAt(i);
-        }
-        if(text.equals(reversed)) {
-            result = true;
+        while (left < right) {
+
+         if(text.charAt(left) != text.charAt(right)){
+             return false;
+         }
+
+         left++;
+         right--;
+
         }
 
-        return result;
+        return true;
     }
 
 
@@ -25,7 +27,6 @@ public class Hello {
 
     public static void main(String[] args) {
 
-        System.out.println(isPalindrome("racecar"));
-
+    System.out.println(isPalindromeFast("abcda"));
     }
 }
