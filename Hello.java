@@ -2,31 +2,27 @@
 
 public class Hello {
 
-   public static int countVowels(String text) {
+   public static boolean isPalindrome(String str) {
+    
+    int left = 0;
+    int right = str.length() - 1;
 
-    int count = 0;
+    while (left < right) {
+       if ( str.charAt(left) != str.charAt(right) ) {
 
-    text = text.toLowerCase();
-
-    for (int i = 0; i < text.length(); i++){
-        char c = text.charAt(i);
-            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'){
-                count++;
-            }
+        return false;
+       }
+       left++;
+       right--;
     }
-
-    return count;
-}
-
+    return true;
+   }
 
 
     public static void main(String[] args) {
 
-    int result = countVowels("Education");
-    int result2 = countVowels("12345");
-    System.out.println(result);
-    System.out.println(result2);
-
+        System.out.println(isPalindrome("racecar"));
+        System.out.println(isPalindrome("hello"));
     }
 
 }
