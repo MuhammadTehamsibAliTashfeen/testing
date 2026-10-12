@@ -2,23 +2,23 @@
 
 public class Hello {
 
-    
-public static String swapCase(String text) {
-        String result = "";
+   public static int countVowels(String text) {
+    int count = 0;
+    text = text.toLowerCase();
 
-        // Your code here
-        for (int i = 0; i < text.length(); i++) {
-            char c = text.charAt(i);
-            if (Character.isLowerCase(c)) {
-                c = Character.toUpperCase(c);
-            } else if (Character.isUpperCase(c)) {
-                c = Character.toLowerCase(c);
-            }
-            result += c;
+    for (int i = 0; i < text.length(); i++) {
+        char c = text.charAt(i);
+
+        if (c == 'a' || c == 'e' || c == 'i'
+                || c == 'o' || c == 'u') {
+            count++;
         }
+    }
 
-        return result;
+    return count;
 }
+
+    
 
    
    
@@ -26,11 +26,7 @@ public static String swapCase(String text) {
 
     public static void main(String[] args) {
 
-        System.out.println(swapCase("Hello, World!123erw"));
-      
-
-
-
+        System.out.println(countVowels("Hello, World!"));
 
 
     }
