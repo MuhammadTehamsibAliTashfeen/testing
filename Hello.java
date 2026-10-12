@@ -2,22 +2,30 @@
 
 public class Hello {
 
-   public static void printCharacters(String text) {
+   public static int countVowels(String text) {
 
-    // Write your code here
-    for (int i = 0; i < text.length(); i++) {
-        System.out.println(text.charAt(i));
+    int count = 0;
+
+    text = text.toLowerCase();
+
+    for (int i = 0; i < text.length(); i++){
+        char c = text.charAt(i);
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'){
+                count++;
+            }
     }
-}
 
+    return count;
+}
 
 
 
     public static void main(String[] args) {
 
-    printCharacters("JAVA");
-
-
+    int result = countVowels("Education");
+    int result2 = countVowels("12345");
+    System.out.println(result);
+    System.out.println(result2);
 
     }
 
