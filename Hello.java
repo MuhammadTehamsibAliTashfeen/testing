@@ -2,28 +2,37 @@
 
 public class Hello {
 
-
-    public static int countCharacter(String text, char target) {
-   
-        int count = 0;
-        text = text.toLowerCase();
-        target = Character.toLowerCase(target);
+    
+public static String swapCase(String text) {
+        String result = "";
 
         // Your code here
-        for (int i = 0; i < text.length(); i++){
-            if (text.charAt(i) == target){
-                count++;
+        for (int i = 0; i < text.length(); i++) {
+            char c = text.charAt(i);
+            if (Character.isLowerCase(c)) {
+                c = Character.toUpperCase(c);
+            } else if (Character.isUpperCase(c)) {
+                c = Character.toLowerCase(c);
             }
+            result += c;
         }
 
-        return count;
-    }
+        return result;
+}
+
+   
    
 
 
     public static void main(String[] args) {
-        System.out.println(countCharacter("Hello, World!", 'l'));
-        System.out.println(countCharacter("Hello, World!", 'o'));
+
+        System.out.println(swapCase("Hello, World!123erw"));
+      
+
+
+
+
+
     }
 
 }
