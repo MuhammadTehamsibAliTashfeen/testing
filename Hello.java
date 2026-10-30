@@ -13,15 +13,11 @@ class Hello {
             }
         }
 
-
-
-
-
-        for (int i = 0; i < 3; i++){
-            for (int j = 0; j < 4; j++){
-                System.out.print(" "+ nums[i][j]);
+        for ( int a[]: nums){
+            for(int b: a){
+                System.out.print(" "+ b);
             }
-            System.out.println(" ");
+            System.out.println();
         }
         
 
